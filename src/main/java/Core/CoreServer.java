@@ -17,6 +17,7 @@ public class CoreServer
     private RoomMenager roomMenager;
     private IncomingPacketHendler incomingPacketHendler;
     private ClientMennager clientMennager;
+    private PacketFactory packetFactory;
 
 
     public CoreServer()
@@ -26,6 +27,12 @@ public class CoreServer
         roomMenager = new RoomMenager();
         incomingPacketHendler = new IncomingPacketHendler();
         clientMennager = new ClientMennager();
+        packetFactory = new PacketFactory();
+    }
+
+    public PacketFactory getPacketFactory()
+    {
+        return packetFactory;
     }
 
     public RoomMenager getRoomMenager() {

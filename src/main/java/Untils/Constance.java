@@ -5,5 +5,5 @@ package Untils;
  */
 public class Constance
 {
-
+    public static final int FPS = 30;
 }

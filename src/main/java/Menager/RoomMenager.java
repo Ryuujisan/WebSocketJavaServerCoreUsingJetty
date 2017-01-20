@@ -15,7 +15,7 @@ public class RoomMenager
 
     public RoomMenager()
     {
-
+        CreateRoom();
     }
 
     public Room CreateRoom()

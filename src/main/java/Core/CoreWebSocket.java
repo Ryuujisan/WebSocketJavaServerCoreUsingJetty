@@ -72,6 +72,8 @@ public class CoreWebSocket extends WebSocketHandler
     @OnWebSocketMessage
     public void onMessage(Session session, InputStream streamFromClient)
     {
-        //TODO odbieranie pakietów tym sie zajmie prtobuffer ;-)
+        ClientConnect client = CoreServer.getInstance().getClientMennager().geClientConnection(session);
+
+        CoreServer.getInstance().getPacketFactory().CreateIncomingPacket(client, streamFromClient);
     }
 }
