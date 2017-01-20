@@ -15,7 +15,7 @@ public class Room implements Runnable
     private int ID;
     private String roomName;
 
-    HashMap<Integer, Player> playerList;
+    private HashMap<Integer, Player> playerList;
 
 
     public Room()
@@ -30,7 +30,8 @@ public class Room implements Runnable
         this.roomMenager = roomMenager;
     }
 
-    public void run() {
+    public void run()
+    {
 
     }
 

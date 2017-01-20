@@ -18,7 +18,7 @@ public class RoomMenager
 
     }
 
-    public Room CreateRooo()
+    public Room CreateRoom()
     {
         Room room = new Room(RoomIdGenerator.GenerateID(), this);
         roomList.put(room.getID(), room);
